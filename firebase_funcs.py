@@ -1,9 +1,9 @@
 import firebase_admin
 from firebase_admin import credentials, db
-
+from fbk import fbk_dict
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate(key_data)
+cred = credentials.Certificate(fbk_dict)
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://yellow-vortex-default-rtdb.europe-west1.firebasedatabase.app/'
 })

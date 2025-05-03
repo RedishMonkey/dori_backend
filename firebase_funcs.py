@@ -1,15 +1,6 @@
 import firebase_admin
 from firebase_admin import credentials, db
-import os
-import json
 
-# Get the absolute path to key.json
-current_dir = os.path.dirname(os.path.abspath(__file__))
-key_path = os.path.join(current_dir, 'key.json')
-
-# Load the key.json file
-with open(key_path, 'r') as f:
-    key_data = json.load(f)
 
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate(key_data)

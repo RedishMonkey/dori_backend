@@ -1,15 +1,15 @@
 import uvicorn
 from os import getenv
-port = getenv("PORT")
+open_port = getenv("PORT")
 
-if port is None:
-    port = 8000
+if open_port is None:
+    open_port = 8000
 
 if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=port,
+        port=open_port,
         # env_file="./.env",/
         reload=True
     )

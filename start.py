@@ -6,7 +6,6 @@ if open_port is None:
     open_port = 8000
 
 open_port = int(open_port)
-print(f"\n\n\n\n\nopen_port: {open_port}")
 
 if __name__ == "__main__":
     uvicorn.run(

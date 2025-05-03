@@ -2,7 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from firebase_funcs import set_ECG, set_humidity, set_temperature, set_bpm
+from dotenv import load_dotenv
 
+# load_dotenv("/etc/secrets/")
 
 app = FastAPI()
 

@@ -1,5 +1,18 @@
 from os import getenv
 
+print("TYPE:", getenv("TYPE"))
+print("PROJECT_ID:", getenv("PROJECT_ID"))
+print("PRIVATE_KEY_ID:", getenv("PRIVATE_KEY_ID"))
+print("PRIVATE_KEY:", getenv("PRIVATE_KEY"))
+print("CLIENT_EMAIL:", getenv("CLIENT_EMAIL"))
+print("CLIENT_ID:", getenv("CLIENT_ID"))
+print("AUTH_URI:", getenv("AUTH_URI"))
+print("TOKEN_URI:", getenv("TOKEN_URI"))
+print("AUTH_PROVIDER_x509_CERT_URL:", getenv("AUTH_PROVIDER_x509_CERT_URL"))
+print("CLIENT_x509_CERT_URL:", getenv("CLIENT_x509_CERT_URL"))
+print("UNIVERSE_DOMAIN:", getenv("UNIVERSE_DOMAIN"))
+
+
 fbk_dict = {
   "type": getenv("TYPE"),
   "project_id": getenv("PROJECT_ID"),
